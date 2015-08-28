@@ -1,0 +1,17 @@
+*.swp
+*.log
+.htaccess
+sitemap.xml
+sitemap.html
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/wpcf7_captcha/
+error_log
+wp-snapshots/
+cgi-bin/
+wordpress-4.2.2.tar.gz
+defunct-wp.zip
