@@ -203,13 +203,13 @@
 		<?php wp_head(); ?>
 
              <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-66797689-1', 'auto'); ga('send', 'pageview'); </script>
-               
+               <script type="text/css" src="<?php echo get_template_directory_uri(); ?>/js/tracking.js"></script>
 	
 	<!--// CLOSE HEAD //-->
 	</head>
 	
 	<!--// OPEN BODY //-->
-	<body <?php body_class($page_class.' '.$is_responsive.' '.$extra_page_class.' '.$header_search_type); ?> ontouchstart="">
+	<body <?php if(is_page( 'request-dental-appointment' ) || is_page( 'implant-special' ) ){ echo 'onload="_googWcmGet('."'number', '6306277626')".'"'; } ?> <?php body_class($page_class.' '.$is_responsive.' '.$extra_page_class.' '.$header_search_type); ?> ontouchstart="">
 <!--<div class="phone_header" style="position: fixed; top: 45%; z-index: 100; right: -68px;"><div class="phone_tel"><p>(620) 627-7626</p></div>
 <div class="phone_number"><img src="http://dental.webtage.com/wp-content/uploads/2015/07/phone_number_telephone-128.png" style="width: 20%;"></div></div>-->
 <!--<div class="phone_header" style="position: fixed; top: 45%; z-index: 100; right: -68px;"><a href="tel:620-7626">(620) 627-7626<img src="http://dental.webtage.com/wp-content/uploads/2015/07/Dental-1.png" style="width: 20%;"></a></div>-->
@@ -223,6 +223,8 @@
 </div></div>
 
 		<div class="dental_sign"><a class="sf-button standard accent standard" href="#modal-dentalsign" role="button" data-toggle="modal"><img src="/wp-content/uploads/2015/07/Icon.png" style="width: 80%;"></a></div>
+
+	<div class="dental_sign1"><a class="sf-button standard accent standard" href="#modal-dentalsign1" role="button" data-toggle="modal"><img src="http://www.addisondental.com/wp-content/uploads/2015/07/ICON.jpg" style="width: 80%;"></a></div>
 
 <!-- dental sign popup -->
 <div id="modal-dentalsign" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="ss-delete"></i></button><h3 id="modal-label"></h3></div><div class="modal-body">
@@ -238,7 +240,7 @@
 </div>
 <h1 style="text-align: center; text-align: center;background-color: #45C2C5; color: white;">Contact Addison Dental Today</h1>
 <p style="font-weight: bold;">Phone Number</p>
-<p><img style="width: 30px;" src="http://www.addisondental.com/wp-content/uploads/2015/07/MB__phone.png"><a href="tel:630-627-7626">(630) 627-7626<a/></p>
+<p><img style="width: 30px;" src="http://www.addisondental.com/wp-content/uploads/2015/07/MB__phone.png"><a href="tel:630-627-7626"><span class="number">(630) 627-7626</span><a/></p>
 <p style="margin-top: 20px; font-weight: bold;">Office Hours</p>
 <p>Mon, Wed,Thurs,Fri – 9:00AM-5:30PM<br />
 1st Sat of the Month – 9:00AM – Noon<br />
@@ -260,6 +262,34 @@ ON CALL 24 HOURS</p>
 	</div> </div></div>
 
 <!-- dental sign popup -->
+
+
+
+<!-- dental sign popup2-->
+<div id="modal-dentalsign1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="ss-delete"></i></button><h3 id="modal-label"></h3></div><div class="modal-body">
+<div role="form" class="wpcf7" id="wpcf7-f1477-p1478-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form name="" action="/call/#wpcf7-f1477-p1478-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="1477" />
+<input type="hidden" name="_wpcf7_version" value="4.2.1" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1477-p1478-o1" />
+<input type="hidden" name="_wpnonce" value="2381664655" />
+</div>
+<h2 style="text-align: center; text-align: center;background-color: #45C2C5; color: white;">Request CallBack</h2>
+<p style="font-size:16px;"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" /></span> </p>
+<p style="font-size:16px;"><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number" /></span> </p>
+<p style="font-size:16px;"><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="20" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Query"></textarea></span> </p>
+<p><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" /></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div><br />
+</div></div></div></div>
+
+		</div> 
+	</div> </div></div>
+
+<!--dental sign popup2 -->
+
 
 		<div id="header-search">
 			<div class="container clearfix">
